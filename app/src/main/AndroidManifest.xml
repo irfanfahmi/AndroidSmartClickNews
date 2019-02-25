@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.irfanfahmiwijaya.humassmartclickapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:versionCode="5">
+        <activity
+            android:name=".splashscreen"
+            android:noHistory="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".berita_detail_item" />
+        <activity android:name=".modul_bupati" />
+        <activity android:name=".bupati_detail_item" />
+        <activity android:name=".modul_wakil_bupati" />
+        <activity android:name=".wakil_bupati_detail_item" />
+        <activity android:name=".modul_unduh_naskah" />
+        <activity android:name=".PDFActivity" />
+        <activity android:name=".modul_pemerintah" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".pemerintah_detail_item" />
+        <activity android:name=".modul_galeri" />
+        <activity android:name=".modul_galerifoto" />
+        <activity android:name=".modul_login" />
+        <activity android:name=".modul_registrasi" />
+        <activity android:name=".modul_galerivideo" />
+        <activity
+            android:name=".video_detail_item"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".modul_kalender"></activity>
+    </application>
+
+</manifest>

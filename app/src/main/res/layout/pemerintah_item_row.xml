@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:elevation="0dp"
+        android:id="@+id/containerp"
+        android:layout_marginTop="2dp"
+        android:padding="16dp"
+        android:layout_width="344dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/thumbnailkp"
+                android:layout_width="100dp"
+                android:layout_height="75dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/ic_person_black_24dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/nama_kegiatanp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/rubik_reguler"                    android:textColor="@color/colorBlack"
+                    android:text="Nama Kegiatan"
+                    android:textSize="16dp" />
+                <TextView
+                    android:id="@+id/tanggal_kegiatanp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:fontFamily="@font/rubik_reguler"                    android:layout_marginTop="5dp"
+                    android:text="Tanggal Kegiatan"
+                    android:textSize="14dp" />
+                <TextView
+                    android:id="@+id/tempat_kegiatanp"
+                    android:layout_width="wrap_content"
+                    android:fontFamily="@font/rubik_reguler"                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="3dp"
+                    android:text="Tempat Kegiatan"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+
+
+</LinearLayout>

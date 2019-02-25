@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/home" android:title="Home" android:onClick="klikhome" android:icon="@drawable/ic_home_black_24dp"/>
+    <item android:id="@+id/kale"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        android:title="Kalender"
+        android:onClick="klikcalendar"/>
+    <item android:title="Informasi Kegiatan">
+        <menu>
+            <item android:id="@+id/nav_item_six"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Bupati"
+                android:onClick="klikbupati"/>
+            <item android:id="@+id/nav_item_seven"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Wakil Bupati"
+                android:onClick="klikwakilbupati"/>
+            <item android:id="@+id/nav_item_sevend"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Pemerintah"
+                android:onClick="klikpemerintah"/>
+        </menu>
+    </item>
+    <item android:title="Unduhan">
+        <menu>
+            <item android:id="@+id/nav_item_sixda"
+                android:icon="@drawable/ic_content_paste_black_24dp"
+                android:title="Unduh Naskah"
+                android:onClick="klikunduh"/>
+
+        </menu>
+    </item>
+
+
+
+
+    <item android:title="Galeri">
+        <menu>
+            <item android:id="@+id/ganleri"
+                android:onClick="klikgaleri"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="Galeri Kegiatan" />
+
+            <item android:id="@+id/ganleri2"
+                android:onClick="klikgalerifoto"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="Galeri Foto" />
+
+            <item android:id="@+id/ganlerivideo"
+                android:onClick="klikgalerivideo"
+                android:icon="@drawable/ic_image_black_24dp"
+                android:title="Galeri Video" />
+
+        </menu>
+
+    </item>
+
+
+</menu>

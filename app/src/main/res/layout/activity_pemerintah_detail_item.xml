@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".pemerintah_detail_item">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarid"
+        android:layout_width="match_parent"
+        app:titleTextColor="@color/colorWhite"
+        android:background="@color/colorPrimary"
+        android:layout_height="?attr/actionBarSize">
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/thumbnaildkp"
+        android:layout_width="match_parent"
+        android:scaleType="fitXY"
+        android:layout_height="194dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/nama_dkegiatanp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            android:fontFamily="@font/rubik_reguler"
+            android:textColor="@color/colorBlack"
+            android:layout_height="wrap_content"
+            android:text="Nama_kegiatan"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_date_range_black_24dp"/>
+
+            <TextView
+                android:id="@+id/tanggal_dkegiatanp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/rubik_reguler"
+                android:layout_height="wrap_content"
+                android:text="Tanggal berita"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_location_on_black_24dp"/>
+            <TextView
+                android:id="@+id/tempat_dkegiatanp"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="2dp"
+                android:textSize="14dp"
+                android:fontFamily="@font/rubik_reguler"
+                android:layout_height="wrap_content"
+                android:text="Lokasi Berita"/>
+        </LinearLayout>
+        <View
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#aeaaaa"/>
+
+        <TextView
+            android:id="@+id/deskripsi_dkegiatanp"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:textSize="12dp"
+            android:fontFamily="@font/rubik_reguler"
+            android:layout_marginRight="16dp"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi"/>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
